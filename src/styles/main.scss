@@ -8,6 +8,10 @@ body {
   margin-top: 100px;
 }
 
+.btn {
+  margin: .5em;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -16,4 +20,52 @@ body {
 
 .form-container {
   border: 1px solid black;
+  max-width: 80em;
+  align-self: center;
+  padding: .5em 10em .5em 10em;
+}
+
+.card-container {
+  margin: .5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  align-content: center;
+  justify-content: center;
+}
+
+.card {
+  min-width: 30em;
+  margin: 2em;
+}
+
+.card li {
+  list-style: none;
+}
+
+.card ul {
+  margin-left: -2.5em;
+}
+
+.card img {
+  max-width: 27em;
+  align-self: center;
+  margin-top: 1em;
+}
+
+.card-fish {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.card-fish div {
+  margin: 1em;
+  min-height: 10em;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
 }

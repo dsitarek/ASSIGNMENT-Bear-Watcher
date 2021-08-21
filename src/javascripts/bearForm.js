@@ -5,6 +5,7 @@ const renderToDom = (divId, textToPrint) => {
 
 const renderForm = () => {
   const domString = `<form id="bearForm">
+  <div class="error-message" id="errorMessage"></div>
     <div class="mb-3">
       <label for="bearName" class="form-label">Bear Name:</label>
       <input required type="text" class="form-control" id="bearName">
