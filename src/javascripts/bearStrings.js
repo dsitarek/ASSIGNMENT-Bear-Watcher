@@ -13,8 +13,10 @@ const bearString = (bearName, bearImg, bearDescription, fish, timeCaught, timeTr
     <ul>${timeTried}</ul>
   </div>
   </div>
-  <button class="btn btn-primary" id="caughtBtn--${bearName}">Caught a fish</a>
-  <button class="btn btn-primary" id="triedBtn--${bearName}">Tried to catch a fish</a>
+  <div>
+  <button class="btn caught-btn" id="caughtBtn--${bearName}">Caught a fish</a>
+  <button class="btn" id="triedBtn--${bearName}">Tried to catch a fish</a>
+</div>
 </div>
 </div>`;
 

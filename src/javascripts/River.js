@@ -8,13 +8,23 @@ const bearArray = [{
   fish: 0,
   timeCaught: [],
   timeAttempted: [],
-}];
+}, {
+  bearName: 'Yogi',
+  bearImg: 'https://tinyurl.com/5fzkj43r',
+  bearDescription: 'I like picnic baskets',
+  fish: 0,
+  timeCaught: [],
+  timeAttempted: [],
+}
+];
 
 const renderBears = (arr) => {
   let domString = '';
   let caughtTimeString = '';
   let triedTimeString = '';
   arr.forEach((bear) => {
+    caughtTimeString = '';
+    triedTimeString = '';
     bear.timeCaught.forEach((time) => { caughtTimeString += `<li>${time}</li>`; });
     bear.timeAttempted.forEach((time) => { triedTimeString += `<li>${time}</li>`; });
     domString += bearString(bear.bearName, bear.bearImg, bear.bearDescription, bear.fish, caughtTimeString, triedTimeString);
