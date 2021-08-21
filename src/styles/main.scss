@@ -1,28 +1,69 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url('http://fonts.cdnfonts.com/css/long-fox');
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-image: linear-gradient(rgb(161, 121, 187),rgb(98, 75, 117));
+  color: rgb(184, 164, 196);
   text-align: center;
-  margin-top: 100px;
 }
 
 .btn {
   margin: .5em;
 }
 
+.btn-primary {
+  background-color: rgb(69, 150, 48);
+  border: 1px solid rgb(12, 90, 12);
+  text-shadow: 1px 1px 2px solid black;
+}
+
+.btn-primary:hover {
+  background-color: rgb(91, 201, 63);
+}
+
+.btn-primary:active {
+  background-color: rgb(91, 201, 63);
+}
+
+.btn-primary:focus {
+  background-color: rgb(91, 201, 63);
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin: 0 1em 0 1em;
+  text-shadow: 1px 1px 1px rgb(55, 42, 66);
 }
 
+.header {
+  border-bottom: 1px solid rgb(78, 60, 94);
+  box-shadow: 1px 0 5px black;
+  padding: 0em 0 0 0;
+  font-size: 7em;
+  background-color:rgba(0, 0, 0, 0.2);
+  font-family: 'Long Fox', 'Helvetica Neue', Helvetica, Arial,;
+}
+
+.header p {
+  background-image: url("https://tinyurl.com/sh9pfkw2");
+  background-repeat: no-repeat;
+  background-size: 68%;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .form-container {
-  border: 1px solid black;
+  border: 1px solid rgb(55, 42, 66);
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgb(62, 48, 75);
   max-width: 80em;
   align-self: center;
   padding: .5em 10em .5em 10em;
+  background-color:rgba(0, 0, 0, 0.2);
 }
 
 .card-container {
@@ -35,8 +76,15 @@ body {
 }
 
 .card {
-  min-width: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20em;
   margin: 2em;
+  border: 1px solid rgb(55, 42, 66);
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgb(55, 42, 66);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .card li {
@@ -44,11 +92,14 @@ body {
 }
 
 .card ul {
-  margin-left: -2.5em;
+  margin-left: -1.8em;
 }
 
 .card img {
-  max-width: 27em;
+  max-width: 25em;
+  max-height: 16em;
+  width: auto;
+  height: auto;
   align-self: center;
   margin-top: 1em;
 }
@@ -58,6 +109,12 @@ body {
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  flex-grow: 5;
+  font-size: 1.5em;
+}
+
+.card-fish h6 {
+  font-size: 1.25em;
 }
 
 .card-fish div {
@@ -65,7 +122,50 @@ body {
   min-height: 10em;
 }
 
+.card-fish ul li {
+  border: 1px solid rgb(95, 72, 114);
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgb(95, 72, 114);
+  margin: .2em;
+}
+
+.card .btn {
+  background-image: url(../img/fishbtn.png);
+  background-size: 15em;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 14em;
+  padding: 2.5em .5em 2.5em .5em;
+  font-weight: bold;
+  color: rgb(255, 62, 62);
+  text-shadow: 2px 2px 2px black, 2px 2px 4px black;
+}
+
+.card .caught-btn {
+  color: rgb(155, 245, 52);
+  text-shadow: 2px 2px 2px black, 2px 2px 4px black;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .error-message {
   color: red;
   font-weight: bold;
+}
+
+#bearForm input, #bearForm textarea {
+  color: rgb(218, 199, 230);
+  background-color: rgb(98, 75, 117);
+  border-color: rgb(55, 42, 66);
+  box-shadow: 1px 1px 2px rgb(55, 42, 66);
+}
+
+#bearForm input:active, #bearForm textarea:active {
+  color: rgb(218, 199, 230);
+  background-color: rgb(98, 75, 117);
+  border-color: rgb(55, 42, 66);
+  box-shadow: 1px 1px 2px rgb(55, 42, 66);
 }
