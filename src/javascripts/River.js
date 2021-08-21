@@ -1,19 +1,11 @@
 import { renderForm, renderToDom } from './bearForm';
+import bearString from './bearStrings';
 
 const bearArray = [{
   bearName: 'Ted',
   bearImg: 'https://tinyurl.com/439x599d',
   bearDescription: "I'm a BEAR!!!!"
 }];
-
-const bearString = (bearName, bearImg, bearDescription) => `<div class="card" style="width: 18rem;">
-<img src="${bearImg}" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">${bearName}</h5>
-  <p class="card-text">${bearDescription}</p>
-  <a href="#" class="btn btn-primary">Go somewhere</a>
-</div>
-</div>`;
 
 const renderBears = (arr) => {
   let domString = '';
@@ -22,9 +14,27 @@ const renderBears = (arr) => {
   renderToDom('#cardContainer', domString);
 };
 
+const addBear = (e) => {
+  e.preventDefault();
+  const bearName = document.getElementById('bearName').value;
+  const bearDescription = document.getElementById('bearDescription').value;
+  const bearImg = document.getElementById('bearURL').value;
+
+  bearArray.push({
+    bearName,
+    bearImg,
+    bearDescription
+  });
+
+  renderBears(bearArray);
+};
+
+const bearEvents = () => document.getElementById('bearForm').addEventListener('submit', (e) => addBear(e));
+
 const init = () => {
   renderForm();
   renderBears(bearArray);
+  bearEvents();
 };
 
 export default init;
