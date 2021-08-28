@@ -11,8 +11,7 @@ Useful app for anyone who wants to track bears
 ## Video Walkthrough
 - [Loom](https://www.loom.com/share/c69dce5846c54b40971a61d8ae02f566)
 ## Relevant Links 
-- [Check out the deployed site](#your-link)
-- [Project Board](#https://github.com/dsitarek/ASSIGNMENT-Bear-Watcher/projects/1)
+- [Project Board](https://github.com/dsitarek/ASSIGNMENT-Bear-Watcher/projects/1)
 
 ## Contributors
 - [Daniel Sitarek](https://github.com/dsitarek)
